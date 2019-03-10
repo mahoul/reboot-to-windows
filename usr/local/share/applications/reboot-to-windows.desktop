@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Reboot to Windows
+Comment=Reboot to Windows
+Exec=sudo reboot-to-windows.sh 
+Icon=Windows_logo_-_2012
+Terminal=false
+StartupNotify=true
+
