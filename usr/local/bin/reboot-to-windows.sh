@@ -31,7 +31,7 @@ get_grub2_cfgfile(){
 	esac
 
 	if [ -e $grub2_bios_file ] ; then
-		readlink -f $grub2_cfg_file
+		readlink -f $grub2_bios_file
 	elif [ -e $grub2_efi_file ]; then
 		readlink -f $grub2_efi_file
 	fi
