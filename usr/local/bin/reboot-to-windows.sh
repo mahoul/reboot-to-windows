@@ -42,7 +42,7 @@ get_grub2_cfgfile(){
 get_1st_window_entry(){
 	local grub2_cfg_path=$(dirname $GRUB2_CFG_FILE)
 	awk -F\' '/menuentry / {print $2}' $grub2_cfg_path/*.cfg | \
-grep -m1 Windows2
+grep -m1 Windows
 }
 
 # Get GRUB2 next boot entry
