@@ -33,7 +33,16 @@ get_grub2_cfgfile(){
 		*)
 			;;
 	esac
+<<<<<<< HEAD:local/bin/reboot-to-windows.sh
 	readlink -f $grub2_cfg_file
+=======
+
+	if [ -e $grub2_bios_file ] ; then
+		readlink -f $grub2_bios_file
+	elif [ -e $grub2_efi_file ]; then
+		readlink -f $grub2_efi_file
+	fi
+>>>>>>> ff604b2b627608e3d08ca5851a850e7a67d8491b:usr/local/bin/reboot-to-windows.sh
 }
 
 # Get first Windows entry from Grub config files
